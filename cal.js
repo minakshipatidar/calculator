@@ -14,7 +14,7 @@ buttons.forEach((button) => {
 
         } else if (e.target.innerHTML === '=') {
             str = eval(str);
-            if (str) {
+            if (str || str === 0) {
                 str = `${str}`
                 output.value = str;
             } else {
